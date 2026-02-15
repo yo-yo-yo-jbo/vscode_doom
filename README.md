@@ -2,7 +2,7 @@
 Click this picture to see a recorded demo as well:  
 [![Demo](demo.png)](demo.mp4)
 
-## How does it work?
+## How does it work
 This project relies on the legendary [doomgeneric](https://github.com/ozkl/doomgeneric) repository, and implements a new VSCode code window as the screen buffer.  
 It performs the following:
 1. Uses color schemes to output color.
@@ -11,6 +11,11 @@ It performs the following:
 4. Performs press-and-release simulations: VSCode only gives you keydown events, not keyup. So `pressAndRelease` works around this with a debounced release timer (150ms). On each keystroke, it immediately sends a key-press event to the DOOM process, and schedules a key-release 150ms later. If the same key fires again before the timer expires, the release is postponed — this keeps the key "held down" for continuous movement while the user holds the key.
 
 The cool think - it was 100% vibe-coded using [Claude Code](https://code.claude.com/docs/en/overview).
+
+## How to run
+1. Open [VSCode](https://code.visualstudio.com) in this directory.
+2. Press `F5`. A new Window should appear.
+3. Run `DOOM: Start Game` to start (see [video](demo.mp4)).
 
 Give it a go!
 
