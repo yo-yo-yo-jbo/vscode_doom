@@ -1,4 +1,5 @@
 # Running DOOM in VSCode
+Click this picture to see a recorded demo as well:  
 [![Demo](demo.png)](demo.mp4)
 
 ## How does it work?
