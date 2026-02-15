@@ -10,7 +10,7 @@ It performs the following:
 3. Registers named VS Code commands (`doom.key.up`, `doom.key.ctrl`, etc.) that map to DOOM key codes. These are bound to actual keyboard shortcuts in `package.json` keybindings with a when clause (likely `editorTextFocus && resourceScheme == 'doom'`).
 4. Performs press-and-release simulations: VSCode only gives you keydown events, not keyup. So `pressAndRelease` works around this with a debounced release timer (150ms). On each keystroke, it immediately sends a key-press event to the DOOM process, and schedules a key-release 150ms later. If the same key fires again before the timer expires, the release is postponed — this keeps the key "held down" for continuous movement while the user holds the key.
 
-The cool think - it was 100% vibe-coded using [Claude Code](https://code.claude.com/docs/en/overview).
+Another cool thing about this project - it was 100% vibe-coded using [Claude Code](https://code.claude.com/docs/en/overview).
 
 ## How to run
 1. Open [VSCode](https://code.visualstudio.com) in this directory.
