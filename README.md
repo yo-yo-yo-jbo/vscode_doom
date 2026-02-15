@@ -1,5 +1,5 @@
 # Running DOOM in VSCode
-<video src="demo.mp4" controls width="600"></video>
+[![Demo](demo.png)](demo.mp4)
 
 ## How does it work?
 This project relies on the legendary [doomgeneric](https://github.com/ozkl/doomgeneric) repository, and implements a new VSCode code window as the screen buffer.  
