@@ -1,0 +1,22 @@
+{
+  "scopeName": "source.doom",
+  "name": "DOOM",
+  "patterns": [
+    { "match": "0+", "name": "doom.c0" },
+    { "match": "1+", "name": "doom.c1" },
+    { "match": "2+", "name": "doom.c2" },
+    { "match": "3+", "name": "doom.c3" },
+    { "match": "4+", "name": "doom.c4" },
+    { "match": "5+", "name": "doom.c5" },
+    { "match": "6+", "name": "doom.c6" },
+    { "match": "7+", "name": "doom.c7" },
+    { "match": "8+", "name": "doom.c8" },
+    { "match": "9+", "name": "doom.c9" },
+    { "match": "A+", "name": "doom.cA" },
+    { "match": "B+", "name": "doom.cB" },
+    { "match": "C+", "name": "doom.cC" },
+    { "match": "D+", "name": "doom.cD" },
+    { "match": "E+", "name": "doom.cE" },
+    { "match": "F+", "name": "doom.cF" }
+  ]
+}

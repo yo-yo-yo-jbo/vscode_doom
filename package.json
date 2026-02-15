@@ -1,0 +1,104 @@
+{
+  "name": "vscode-doom",
+  "displayName": "DOOM",
+  "description": "Play DOOM inside VSCode using syntax highlighting",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "doom.start",
+        "title": "DOOM: Start Game"
+      },
+      {
+        "command": "doom.stop",
+        "title": "DOOM: Stop Game"
+      }
+    ],
+    "languages": [
+      {
+        "id": "doom",
+        "extensions": [".doom"]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "doom",
+        "scopeName": "source.doom",
+        "path": "./syntaxes/doom.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "DOOM",
+        "uiTheme": "vs-dark",
+        "path": "./themes/doom-color-theme.json"
+      }
+    ],
+    "keybindings": [
+      { "command": "doom.key.up", "key": "up", "when": "editorLangId == doom" },
+      { "command": "doom.key.down", "key": "down", "when": "editorLangId == doom" },
+      { "command": "doom.key.left", "key": "left", "when": "editorLangId == doom" },
+      { "command": "doom.key.right", "key": "right", "when": "editorLangId == doom" },
+      { "command": "doom.key.enter", "key": "enter", "when": "editorLangId == doom" },
+      { "command": "doom.key.escape", "key": "escape", "when": "editorLangId == doom" },
+      { "command": "doom.key.space", "key": "space", "when": "editorLangId == doom" },
+      { "command": "doom.key.ctrl", "key": "ctrl+f", "when": "editorLangId == doom" },
+      { "command": "doom.key.shift", "key": "shift+s", "when": "editorLangId == doom" },
+      { "command": "doom.key.tab", "key": "tab", "when": "editorLangId == doom" },
+      { "command": "doom.key.y", "key": "y", "when": "editorLangId == doom" },
+      { "command": "doom.key.n", "key": "n", "when": "editorLangId == doom" },
+      { "command": "doom.key.equals", "key": "=", "when": "editorLangId == doom" },
+      { "command": "doom.key.minus", "key": "-", "when": "editorLangId == doom" },
+      { "command": "doom.key.f1", "key": "f1", "when": "editorLangId == doom" },
+      { "command": "doom.key.f2", "key": "f2", "when": "editorLangId == doom" },
+      { "command": "doom.key.f3", "key": "f3", "when": "editorLangId == doom" },
+      { "command": "doom.key.f4", "key": "f4", "when": "editorLangId == doom" },
+      { "command": "doom.key.f5", "key": "f5", "when": "editorLangId == doom" },
+      { "command": "doom.key.f6", "key": "f6", "when": "editorLangId == doom" },
+      { "command": "doom.key.f7", "key": "f7", "when": "editorLangId == doom" },
+      { "command": "doom.key.f8", "key": "f8", "when": "editorLangId == doom" },
+      { "command": "doom.key.f9", "key": "f9", "when": "editorLangId == doom" },
+      { "command": "doom.key.f10", "key": "f10", "when": "editorLangId == doom" }
+    ],
+    "configurationDefaults": {
+      "[doom]": {
+        "editor.fontSize": 2,
+        "editor.lineHeight": 1,
+        "editor.lineNumbers": "off",
+        "editor.minimap.enabled": false,
+        "editor.scrollbar.vertical": "hidden",
+        "editor.scrollbar.horizontal": "hidden",
+        "editor.cursorStyle": "hidden-cursor",
+        "editor.cursorBlinking": "hidden",
+        "editor.folding": false,
+        "editor.glyphMargin": false,
+        "editor.wordWrap": "off",
+        "editor.renderLineHighlight": "none",
+        "editor.overviewRulerBorder": false,
+        "editor.hideCursorInOverviewRuler": true,
+        "editor.matchBrackets": "never",
+        "editor.selectionHighlight": false,
+        "editor.occurrencesHighlight": "off",
+        "editor.renderIndentGuides": false,
+        "editor.letterSpacing": 0,
+        "editor.fontFamily": "monospace",
+        "editor.guides.indentation": false
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/node": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}

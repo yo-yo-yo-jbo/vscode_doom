@@ -1,0 +1,31 @@
+{
+  "name": "DOOM",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#000000",
+    "editor.foreground": "#000000",
+    "editorLineNumber.foreground": "#000000",
+    "editorCursor.foreground": "#00000000",
+    "editor.selectionBackground": "#00000000",
+    "editor.lineHighlightBackground": "#00000000",
+    "editorOverviewRuler.border": "#00000000"
+  },
+  "tokenColors": [
+    { "scope": "doom.c0", "settings": { "foreground": "#000000" } },
+    { "scope": "doom.c1", "settings": { "foreground": "#1A1A1A" } },
+    { "scope": "doom.c2", "settings": { "foreground": "#404040" } },
+    { "scope": "doom.c3", "settings": { "foreground": "#737373" } },
+    { "scope": "doom.c4", "settings": { "foreground": "#502810" } },
+    { "scope": "doom.c5", "settings": { "foreground": "#8B4513" } },
+    { "scope": "doom.c6", "settings": { "foreground": "#A06020" } },
+    { "scope": "doom.c7", "settings": { "foreground": "#8B0000" } },
+    { "scope": "doom.c8", "settings": { "foreground": "#CC2222" } },
+    { "scope": "doom.c9", "settings": { "foreground": "#D07020" } },
+    { "scope": "doom.cA", "settings": { "foreground": "#E8B830" } },
+    { "scope": "doom.cB", "settings": { "foreground": "#205010" } },
+    { "scope": "doom.cC", "settings": { "foreground": "#409030" } },
+    { "scope": "doom.cD", "settings": { "foreground": "#183058" } },
+    { "scope": "doom.cE", "settings": { "foreground": "#3060A0" } },
+    { "scope": "doom.cF", "settings": { "foreground": "#B0B0B0" } }
+  ]
+}
